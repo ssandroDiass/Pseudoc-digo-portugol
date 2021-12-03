@@ -1,0 +1,18 @@
+algoritmo "Cálculo de juros à 20%"
+
+Var
+   valor, juros, valor_total, valor_parcela: Real
+   parcela: inteiro
+inicio
+      Escreva ("Diga o valor: R$")
+      Leia (valor)
+      Escreva ("Qunatidade de parcelas: ")
+      Leia (parcela)
+      juros <- (valor * 20)/100
+      Escreval ("valor do juros: R$", juros:5:2)
+      valor_total <- valor + juros
+      Escreval ("Valor Total: R$", valor_total:5:2)
+      valor_parcela <- valor_total / parcela
+      Escreval ("Valor das Parcelas: R$", valor_parcela:5:2)
+
+fimalgoritmo
